@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* primary navBar  */
+        .nav-primary {
+            height: 5vh;
+            min-height: 29.7667px;
+            background-color: #4faba1;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        .icon-width {
+            width: 1vw;
+            min-width: 12.8px;
+        }
+
+        .block-1 {
+            display: flex;
+            width: 20%;
+            /* border: 2px solid red; */
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            left: 5%;
+            right: 0;
+            height: 100%;
+        }
+
+        .block-2 {
+            width: 38%;
+            display: flex;
+            /* border: 2px solid blue; */
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            right: 5%;
+            top: 0;
+            height: 100%;
+        }
+
+        #language select {
+            /* border: 2px solid red; */
+            background-color: #4faba1;
+            border: none;
+            width: 4.2vw;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+
+        /* Secodnary navBar */
+        .nav-secondary {
+            height: 15vh;
+            min-height: 89.3px;
+            background-color: white;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        .logo-width {
+            height: 100%;
+        }
+        
+        .navigation {
+            /* border: 2px solid yellow; */
+            width: 45vw;
+            display: flex;
+            height: 100%;
+        }
+        
+        .navigation ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navigation ul li {
+            list-style: none;
+        }
+        
+        .navigation ul li a {
+            text-decoration: none;
+            color: #51584b;
+        }
+        
+        .btn {
+            height: 39%;
+            width: 7%;
+            background-color: #4faba1;
+            color: white;
+            border: none;
+            font-size: 0.75rem;
+        }
+        
+        .btn:hover {
+            cursor: pointer;
+            background-color: #318f84;
+            transition-property: background-color;
+            transition-duration: 2s;
+        }
+        
+        
+        /* Section */
+        section {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            background: url(images/bg-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Footer */
+        .footer {
+            height: 59vh;
+            min-height: 316.117px;
+            background-color: #232323;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        /* Footer -1 */
+        .footer-1 {
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer1-items {
+            height: 75%;
+            width: 85%;
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+        }
+
+        .box {
+            /* border: 2px solid yellow; */
+            position: relative;
+            margin: 0px 8px;
+        }
+
+        .box h3::after {
+            position: absolute;
+            content: "";
+            top: 10%;
+            left: 0;
+            width: 12%;
+            height: 1.5%;
+            background-color: #4faba1;
+        }
+
+        input[type='email'] {
+            padding: 2%;
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+
+        input[type='email']:hover{
+            border: none;
+            outline: none;
+        }
+
+        .foot-email-grid {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            width: 60%;
+        }
+
+        .foot-email-grid div:nth-child(2) {
+            background-color: #4faba1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-item1 p:nth-child(n+6){
+            line-height: 2;
+        }
+        .grid-item2 p{
+            line-height: 2;
+        }
+        .grid-item3 p{
+            line-height: 2;
+        }
+
+
+        /* Footer -2 */
+        .footer-2 {
+            height: 10%;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer-2 p span{
+            color: red;
+        }
+
+        .foot2-item2 ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .foot2-item2 ul li{
+            list-style: none;
+        }
+
+        .foot2-item2{
+            width: 12%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-primary">
+            <div class="block-1">
+                <span>Follow Us On:</span>
+                <a href="#"><img src="images/facebook-1.png" class="icon-width"></a>
+                <a href="#"><img src="images/twitter-2.png" class="icon-width"></a>
+                <a href="#"><img src="images/google plus-3.png" class="icon-width"></a>
+                <a href="#"><img src="images/wikipedia-4.png" class="icon-width"></a>
+                <a href="#"><img src="images/wifi-5.png" class="icon-width"></a>
+                <a href="#"><img src="images/linkdIn-6.png" class="icon-width"></a>
+            </div>
+
+            <div class="block-2">
+                <div id="emai">
+                    <img src="images/email-7.png" class="icon-width"> &nbsp;
+                    <span>Email: demo@example.com</span>
+                </div>
+                <div id="phone">
+                    <img src="images/phone-8.png" class="icon-width"> &nbsp;
+                    <span>Phone: 0123456789</span>
+                </div>
+                <div id="language">
+                    <select>
+                        <option>ENG</option>
+                        <option>HN</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav-secondary">
+            <img src="images/logo.png" class="logo-width">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Shortcodes</a></li>
+                </ul>
+            </div>
+            <button class="btn">DONATE</button>
+        </nav>
+    </header>
+
+
+    <section> Will update Later</section>
+
+    <footer class="footer">
+        <div class="footer-1">
+            <div class="footer1-items">
+                <div class="grid-item1 box">
+                    <h3>ABOUT US</h3>
+                    <br><br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit.</p>
+                    <br>
+                    <h4>CONTACT US</h4> <br>
+                    <p>Phone:0123456789</p>
+                    <p>Email: demo@example.com</p>
+                    <p>Address: Your address goes here</p>
+                </div>
+                <div class="grid-item2 box">
+                    <h3>OUR PROJECT</h3>
+                    <br><br><br>
+                    <p>&gt; &nbsp; Water Surve</p>
+                    <p>&gt; &nbsp; Education for all</p>
+                    <p>&gt; &nbsp; Treatment</p>
+                    <p>&gt; &nbsp; Food Serving</p>
+                    <p>&gt; &nbsp; Cloth</p>
+                    <p>&gt; &nbsp; Selter Project</p>
+                </div>
+                <div class="grid-item3 box">
+                    <h3>QUICK LINK</h3>
+                    <br><br><br>
+                    <p>&gt; &nbsp; Causes</p>
+                    <p>&gt; &nbsp; Projects</p>
+                    <p>&gt; &nbsp; Gallery</p>
+                    <p>&gt; &nbsp; Terms of use</p>
+                    <p>&gt; &nbsp; Legal disclaimer</p>
+                    <p>&gt; &nbsp; Privacy policy</p>
+                </div>
+                <div class="grid-item4 box">
+                    <h3>NEWSLETTER</h3>
+                    <br><br><br>
+                    <p>Select your newsletters, enter your email address, and click "Subscribe</p>
+                    <br>
+
+                    <div class="foot-email-grid">
+                        <div>
+                            <input type="email" placeholder="Email Address">
+                        </div>
+
+                        <div>
+                            <img src="images/email-7.png" class="icon-width">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-2">
+            <div class="foot2-item1">
+                <p>&copy; 2021 <strong>Grant</strong> Made with <span>&#10084;</span> by <strong>Has Themes</strong></p>
+            </div>
+
+            <div class="foot2-item2">
+                <ul>
+                    <li><a href="#"><img src="images/facebook-1.png" class="icon-width"></a></li>
+                    <li><a href="#"><img src="images/twitter-2.png" class="icon-width"></a></li>
+                    <li><a href="#"><img src="images/google plus-3.png" class="icon-width"></a></li>
+                    <li><a href="#"><img src="images/wikipedia-4.png" class="icon-width"></a></li>
+                    <li><a href="#"><img src="images/wifi-5.png" class="icon-width"></a></li>
+                    <li><a href="#"><img src="images/linkdIn-6.png" class="icon-width"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
