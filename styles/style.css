@@ -240,6 +240,7 @@
 
 .vol-grid div img {
     width: 100%;
+    border-radius: 5px;
 }
 
 
@@ -253,7 +254,7 @@
     align-items: center;
     height: 60vh;
     min-height: 357.2px;
-    background-image: linear-gradient(rgba(7, 6, 6, 0.79), rgba(7, 6, 6, 0.79)), url(/images/bg-2.jpg);
+    background-image: linear-gradient(rgba(7, 6, 6, 0.79), rgba(7, 6, 6, 0.79)), url(../images/bg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
