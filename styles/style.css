@@ -17,7 +17,7 @@
     font-size: 0.8rem;
 }
 
-.icon-properties{
+.icon-properties {
     color: white;
 }
 
@@ -94,6 +94,9 @@
     text-decoration: none;
     color: #51584b;
 }
+.navigation ul li a:hover{
+    color: black;
+}
 
 .btn {
     height: 39%;
@@ -129,13 +132,19 @@
     background-position: bottom left;
 }
 
+.section-slider {
+    font-size: 3rem;
+    margin: 6rem;
+    cursor: pointer;
+}
+
 .section-main-container {
     /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 40%;
-    width: 80%;
+    height: 50%;
+    width: 60%;
 }
 
 .section-main-container h2 {
@@ -147,14 +156,14 @@
 
 .section-main-container p {
     /* border: 2px solid yellow; */
-    width: 73%;
+    width: 100%;
     margin: 1% 0;
 }
 
 .section-button-container {
     /* border: 2px solid orange; */
     display: flex;
-    width: 25%;
+    width: 30%;
     height: 20%;
     justify-content: space-between;
 }
@@ -186,8 +195,9 @@
     align-items: center;
     text-align: center;
     /* border: 2px solid red; */
-    height: 90vh;
-    min-height: 512.8px;
+    height: 80vh;
+    min-height: 476px;
+    max-height: 31.25em;
     background-color: white;
 }
 
@@ -196,7 +206,8 @@
     height: 90%;
     width: 80%;
     position: relative;
-    top: 4%;
+    /* top: 4%; */
+    display: grid;
 }
 
 .vol-main-container h2 {
@@ -215,14 +226,15 @@
     position: absolute;
     width: 15%;
     height: 0.4%;
-    background-color: #927e7e;
+    background-color: #beb5b5;
     display: block;
 }
 
-.vol-main-container p:nth-child(3) {
+.vol-main-container p:nth-child(6) {
     width: 60%;
     margin: auto;
 }
+
 
 .vol-grid {
     /* border: 2px solid red; */
@@ -243,7 +255,7 @@
     border-radius: 5px;
 }
 
-.vol-grid div p:nth-child(3){
+.vol-grid div p:nth-child(3) {
     font-size: 0.9rem;
 }
 
@@ -282,7 +294,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     width: 15%;
-    height: 0.3%;
+    height: 0.2%;
     background-color: #927e7e;
     display: block;
 }
@@ -302,20 +314,24 @@
     width: 100%;
     color: white;
 }
+
 .review-1 img {
     width: 15%;
     position: relative;
     top: 5%;
 }
-.review-1 p{
+
+.review-1 p {
     width: 85%;
     text-align: center;
 }
-.review-1 p:nth-child(5){
+
+.review-1 p:nth-child(5) {
     position: relative;
     bottom: 5%;
 }
-.review-1 p:nth-child(odd){
+
+.review-1 p:nth-child(odd) {
     font-size: 0.88rem;
 }
 
@@ -357,7 +373,7 @@
     color: white;
 }
 
-.box h3{
+.box h3 {
     font-weight: 500;
 }
 
@@ -403,6 +419,7 @@ input[type='email'] {
 .grid-item3 p {
     line-height: 2;
 }
+
 
 
 /* Footer -2 */
